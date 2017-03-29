@@ -20,6 +20,9 @@ void elo::calculate(double SA, double SB)
 	
 	Ra = Ra + KK*(SA-Ea);
 	Rb = Rb + KK*(SB-Eb);
+	Ra = round(Ra);
+	Rb = round(Rb);
+	
 }
 
 int elo::getRA()
